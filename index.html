@@ -58,25 +58,28 @@
                         <input type="datetime-local" id="inicio">
                     </div>
 
-                    <div class="input-item"> 
+                    <div class="input-item">
                         <label for="fim">Fim</label>
                         <input type="datetime-local" id="fim">
                     </div>
                 </div>
 
-
                 <div class="input-wrapper">
-                    <label for="tipo">Tipo</label>
-                    <input type="" id="tipo">
+
+                    <div class="input-item">
+                        <label for="tipo">Tipo</label>
+                        <label for="tipo" class="switch"></label>
+                        <input type="" id="tipo">
+                    </div>
+
+                    <div class="input-item">
+                        <label for="local">Local</label>
+                        <input type="text" id="local">
+                    </div>
                 </div>
 
-                <div class="input-wrapper">
-                    <label for="local">Local</label>
-                    <input type="text" id="local">
-                </div>
-
-                <label for="descricao"></label>
-                <textarea name="descricao" id="descricao"></textarea>
+                <label for="descricao">Descrição</label>
+                <textarea name="descricao" id="descricao" placeholder="Escreva sobre os detalhes do evento"></textarea>
 
             </fieldset>
         </main>
