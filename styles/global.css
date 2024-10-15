@@ -33,7 +33,7 @@
     --body-md-regular: 300 16px var(--open);
     --body-md-semi: 600 16px var(--open);
     --body-sm-regular: 500 14px var(--open);
-    --body-sm-semi: 600 14px var(--open);
+    --body-sm-semi: 600 10px var(--open);
     --body-xs-regular: 500 12px var(--open);
     --body-xs-semi: 600 12px var(--open);
 
