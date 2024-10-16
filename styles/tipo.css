@@ -1,0 +1,123 @@
+.tipo-wrapper {
+    margin: 0;
+}
+
+
+.tipo-container {
+    width: 100%;
+    display: flex;
+    position: relative;
+    height: 3rem;
+    border-radius: .5rem;
+    border: 1px solid var(--input-stroke);
+    background-color: var(--input-base);
+    color: var(--input-placeholder);
+    box-sizing: border-box;
+    padding-block: 0.25rem;
+    padding-inline: 0.3125rem;
+}
+
+
+
+#tipo {
+    display: none;
+}
+
+.tipo-wrapper {
+    cursor: pointer;
+}
+
+.tipo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.presencial {
+    box-sizing: border-box;
+    padding-inline: 1.125rem;
+    display: flex;
+    gap: 0.5rem;
+    width: 100%;
+    background-color: var(--shape-button);
+
+    & svg {
+        width: 1rem;
+        height: 1rem;
+    }
+
+    & svg path {
+        fill: var(--brand-light);
+    }
+
+    & h1 {
+        font: var(--body-sm-semi);
+        color: var(--text-heading);
+    }
+
+
+}
+
+.online {
+    box-sizing: border-box;
+    padding-inline: 1.125rem;
+    display: flex;
+    gap: 0.5rem;
+    width: 100%;
+
+    & svg {
+        width: 1rem;
+        height: 1rem;
+    }
+
+    & svg path {
+        fill: var(--input-placeholder);
+    }
+
+    & h1 {
+        font: var(--body-sm-semi);
+        color: var(--text-body);
+    }
+}
+
+.presencial,
+.online {
+    transition: background-color 0.3s ease, color 0.3s ease, fill 0.3s ease;
+}
+
+#tipo:checked+.tipo-wrapper .presencial {
+    background-color: var(--input-base);
+    transition: background-color 0.3s ease;
+
+    & svg path {
+        fill: var(--input-placeholder);
+        transition: fill 0.3s ease;
+
+    }
+
+    & h1 {
+        font: var(--body-sm-semi);
+        color: var(--text-body);
+        transition: color 0.3s ease;
+
+    }
+}
+
+#tipo:checked+.tipo-wrapper .online {
+    background-color: var(--shape-button);
+    transition: background-color 0.3s ease;
+
+    & svg path {
+        fill: var(--brand-light);
+        transition: fill 0.3s ease;
+
+    }
+
+    & h1 {
+        font: var(--body-sm-semi);
+        color: var(--text-heading);
+        transition: color 0.3s ease;
+
+    }
+}
